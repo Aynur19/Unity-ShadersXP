@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Grayscale Colored (CG)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (CG)/Unlit Grayscale Colored (CG)"
 {
     Properties
     {

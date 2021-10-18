@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Red Green Gradient (HLSL)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (HLSL)/Unlit Red Green Gradient (HLSL)"
 {
     SubShader
     {

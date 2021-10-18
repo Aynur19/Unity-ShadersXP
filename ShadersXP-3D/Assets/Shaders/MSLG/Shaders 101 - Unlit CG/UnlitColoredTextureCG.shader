@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Colored Texture (CG)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (CG)/Unlit Colored Texture (CG)"
 {
     Properties
     {

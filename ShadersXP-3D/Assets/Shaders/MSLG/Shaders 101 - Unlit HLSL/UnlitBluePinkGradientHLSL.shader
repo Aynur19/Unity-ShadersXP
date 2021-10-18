@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Blue Pink Gradient (HLSL)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (HLSL)/Unlit Blue Pink Gradient (HLSL)"
 {
     SubShader
     {

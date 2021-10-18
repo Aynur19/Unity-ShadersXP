@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Two Textures Interpolation (HLSL)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (HLSL)/Unlit Two Textures Interpolation (HLSL)"
 {
     Properties
     {

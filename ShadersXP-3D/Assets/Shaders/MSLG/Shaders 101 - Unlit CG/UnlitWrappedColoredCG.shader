@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Wrapped Colored (CG)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (CG)/Unlit Wrapped Colored (CG)"
 {
     Properties
     {

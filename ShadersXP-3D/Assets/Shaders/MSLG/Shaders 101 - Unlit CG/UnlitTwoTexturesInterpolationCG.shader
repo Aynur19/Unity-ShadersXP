@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Two Textures Interpolation (CG)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (CG)/Unlit Two Textures Interpolation (CG)"
 {
     Properties
     {

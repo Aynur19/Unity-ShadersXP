@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Wrapped Colored (HLSL)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (HLSL)/Unlit Wrapped Colored (HLSL)"
 {
     Properties
     {

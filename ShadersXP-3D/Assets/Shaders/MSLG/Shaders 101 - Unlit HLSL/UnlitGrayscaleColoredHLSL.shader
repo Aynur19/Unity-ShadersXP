@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Grayscale Colored (HLSL)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (HLSL)/Unlit Grayscale Colored (HLSL)"
 {
     Properties
     {

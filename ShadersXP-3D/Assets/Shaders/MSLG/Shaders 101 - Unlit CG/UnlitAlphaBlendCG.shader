@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Alpha Blend (CG)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (CG)/Unlit Alpha Blend (CG)"
 {
     Properties
     {

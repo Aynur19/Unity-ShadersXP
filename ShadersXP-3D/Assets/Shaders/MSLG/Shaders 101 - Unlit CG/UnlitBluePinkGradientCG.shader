@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Blue Pink Gradient (CG)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (CG)/Unlit Blue Pink Gradient (CG)"
 {
     SubShader
     {

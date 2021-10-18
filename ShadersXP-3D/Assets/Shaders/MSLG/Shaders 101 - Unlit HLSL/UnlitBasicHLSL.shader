@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Basic (HLSL)"
+﻿Shader "Custom/MSLG - Shaders101/Unlit (HLSL)/Unlit Basic (HLSL)"
 {
     Properties
     {
