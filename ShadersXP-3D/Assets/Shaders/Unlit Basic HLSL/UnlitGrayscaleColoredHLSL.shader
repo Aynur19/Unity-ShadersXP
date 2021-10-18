@@ -1,9 +1,9 @@
-﻿Shader "Unlit/Unlit Wrapped (CG)"
+﻿Shader "Unlit/Unlit Grayscale Colored (HLSL)"
 {
     Properties
     {
         _MainTex("Texture", 2D) = "white" {}
-        _WrapIter("Number of Wraps", Int) = 0
+        _Color("Color", Color) = (1, 1, 1, 1)
 
         [Enum(UnityEngine.Rendering.BlendMode)] _SrcBlend("Src Blend", Float) = 0
         [Enum(UnityEngine.Rendering.BlendMode)] _DstBlend("Dst Blend", Float) = 0
@@ -19,7 +19,7 @@
         {
             Blend [_SrcBlend] [_DstBlend]
 
-            CGPROGRAM
+            HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
 
@@ -40,30 +40,25 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
+            float4 _Color;
             
-            CBUFFER_START(UnityPerMaterial)
-                int _WrapIter;
-            CBUFFER_END
-            
-
             v2f vert(appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
 
-                if(_WrapIter > 0) {
-                    o.uv = _WrapIter * v.uv;
-                }
                 return o;
             }
 
             fixed4 frag(v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
-                return col;
+                float luminance = 0.3 * col.r + 0.59 * col.g + 0.11 * col.b;
+
+                return float4(luminance, luminance, luminance, col.a) * _Color;
             }
-            ENDCG
+            ENDHLSL
         }
     }
 }

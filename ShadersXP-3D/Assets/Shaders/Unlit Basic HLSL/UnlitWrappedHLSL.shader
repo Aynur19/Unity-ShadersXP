@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Unlit Wrapped (CG)"
+﻿Shader "Unlit/Unlit Wrapped (HLSL)"
 {
     Properties
     {
@@ -19,7 +19,7 @@
         {
             Blend [_SrcBlend] [_DstBlend]
 
-            CGPROGRAM
+            HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
 
@@ -63,7 +63,7 @@
                 fixed4 col = tex2D(_MainTex, i.uv);
                 return col;
             }
-            ENDCG
+            ENDHLSL
         }
     }
 }
